@@ -1,0 +1,40 @@
+body {
+    background: grey;
+    font-family: sans-serif;
+    
+}
+body {
+  margin: 0;
+  padding: 20px 100px;
+  background: gray;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+div {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+div:last-child {
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+button {
+  border: none;
+  border-radius: 30px;
+  padding: 8px 14px;
+  color: white;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+div:nth-child(1) button { background: teal; }
+div:nth-child(2) button { background: orange; }
+div:nth-child(3) button { background: purple; }
