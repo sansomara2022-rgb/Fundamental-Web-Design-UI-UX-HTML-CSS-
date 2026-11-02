@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layout exercise</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      color: rgb(238, 228, 228);
+      background: rgb(140, 46, 46);
+    }
+
+    /* Page wrapper: centered, header on top, content row, footer at the bottom */
+    .page {
+      background-color: antiquewhite;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      max-width: 450px;
+      margin: 28px auto;
+    }
+
+   
+    header {
+      height: 55px;
+      padding: 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      background: #3395ff;
+      box-shadow: 0 3px 0 #1f78d9;
+    }
+
+    footer {
+      height: 55px;
+      padding: 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      padding-top: 0;
+      padding-bottom: 0;
+      display: flex;
+      align-items: center;
+      background: #4169e1;
+      box-shadow: 0 3px 0 #2b4fb8;
+    }
+
+    /* Middle row: main grows, sidebar has a fixed width */
+    .content {
+      display: flex;
+      gap: 14px;
+    }
+
+    main {
+      padding: 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      flex-grow: 1;
+      background: #41b472;
+      box-shadow: 0 3px 0 #2f9a5d;
+    }
+
+    aside {
+      width: 100px;
+      background: #ff644e;
+      box-shadow: 0 3px 0 #e04430;
+      padding: 18px;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* Items wrap onto new lines (4 per row) */
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 14px;
+    }
+
+    .item {
+      width: 64px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      background: #338756;
+      box-shadow: 0 3px 0 #276943;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>header</header>
+
+    <div class="content">
+      <main>
+        main
+        <div class="items">
+          <div class="item">item</div>
+          <div class="item">item</div>
+          <div class="item">item</div>
+          <div class="item">item</div>
+          <div class="item">item</div>
+          <div class="item">item</div>
+          <div class="item">item</div>
+          <div class="item">item</div>
+          <div class="item">item</div>
+          <div class="item">item</div>
+          <div class="item">item</div>
+        </div>
+      </main>
+      <aside>sidebar</aside>
+    </div>
+
+    <footer>footer</footer>
+  </div>
+</body>
+</html>
