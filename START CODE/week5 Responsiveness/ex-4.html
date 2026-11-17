@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media and Clamp function </title>
+    <style>
+        .content{
+            margin: 0;
+            text-align: center;
+          
+            display: block;
+            /*clamp function*/
+            width: clamp(300px, 100%, 800px);
+            height: 400px;            
+            background: #ccea00;      
+        }
+            
+        
+        .small{
+            background-color: red;
+            text-align: center;
+            font-size: small;
+            
+            
+        }
+        .big{
+            background-color: greenyellow;
+            text-align: center;
+            font-size: xxx-large;
+            
+        }
+        @media(max-width:800px){
+            .big{
+                display: none;
+            }
+        }
+        @media(min-width:800px){
+            .small{
+                display: none;
+            }
+        }
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="wapper">
+        <div class="content">
+            <span class="small">I'm small :3</span>
+            <span class="big">I'm big :B</span>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic</title>
+    <style>
+        body {
+           margin: 0;
+            padding: 24px;
+            font-family: Arial, sans-serif;
+        }
+        .basic{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            padding: 20px;
+        }
+        .iteam{
+            width: auto;
+            height: 100px;
+            background-color: aqua;
+
+            border: 2px solid rebeccapurple;
+        }
+
+        @media (max-width: 1000px) {
+           .basic {
+              grid-template-columns: repeat(3, 1fr);
+
+            }
+        }
+
+        @media (max-width: 768px) {
+            .basic {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+           .basic {
+               grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="basic">
+        <div class="iteam">iteam 1</div>
+        <div class="iteam">iteam 2</div>
+        <div class="iteam">iteam 3</div>
+        <div class="iteam">iteam 4</div>
+        <div class="iteam">iteam 5</div>
+        <div class="iteam">iteam 6</div>
+        <div class="iteam">iteam 7</div>
+        <div class="iteam">iteam 8</div>
+        <div class="iteam">iteam 9</div>
+    </div>
+    
+</body>
+</html>

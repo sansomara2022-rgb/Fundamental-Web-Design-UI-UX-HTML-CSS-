@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> responsive webpage</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .page{
+            display: flex;
+           flex-direction: column;
+           justify-items: center;
+           margin: 50px;
+
+
+        }
+        .header {
+
+            background-color: beige;
+            height: 80px;
+           
+            /* border: 2px solid rebeccapurple; */
+
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+
+
+
+        }
+        .content{
+            background-color: pink;
+            flex-grow: 2;
+            height: 80px;
+
+        }
+
+        .sidebar{
+            background-color: aquamarine;
+            flex-grow: 1;
+            height: 80px;
+
+        }
+        .footer{
+            background-color: beige;
+            height: 80px;
+           
+            /* border: 2px solid rebeccapurple; */
+
+        }
+        @media (max-width:900px){
+            .sidebar{
+                flex-grow: 1;
+            }
+            .content{
+                flex-grow: 1;
+            }
+        }
+        @media(max-width:600px){
+            .main{
+                flex-direction: column;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="page">
+        
+        <div class="header">header</div>
+
+        <div class="main">
+            <div class="content">main content</div>
+            <div class="sidebar">sidebar</div>
+        </div>
+
+        <div class="footer">footer</div>
+    </div>
+    
+</body>
+</html>
